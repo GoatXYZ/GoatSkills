@@ -1,0 +1,7 @@
+interface:
+  display_name: "Goatnomious"
+  short_description: "Explicit plan-first autonomous development"
+  default_prompt: "Use $goatnomious to ask one batched clarification pass, write a hardened implementation plan, then execute it task-by-task."
+
+policy:
+  allow_implicit_invocation: false
