@@ -4,7 +4,7 @@ Private backup of personal AI agent skills, with an inventory of provider-manage
 
 ## Personal skills
 
-The October 29, 2026 snapshot contains 15 skills from `~/.agents/skills`, plus the existing Goatnomious skill. Definitions, scripts, references, examples, fonts, and existing license notices are preserved. Bytecode and caches are excluded.
+The October 29, 2026 snapshot contains 15 skills from `~/.agents/skills`. Definitions, scripts, references, examples, fonts, and existing license notices are preserved. Bytecode and caches are excluded.
 
 | Skill | Purpose |
 | --- | --- |
@@ -18,7 +18,6 @@ The October 29, 2026 snapshot contains 15 skills from `~/.agents/skills`, plus t
 | [frontend-design](frontend-design/SKILL.md) | Guide interface design. |
 | [full-send](full-send/SKILL.md) | Finish authorized development work through merge. |
 | [full-stop](full-stop/SKILL.md) | Prepare development work for a human to merge. |
-| [goatnomious](goatnomious/SKILL.md) | Plan and execute multi-step development work. |
 | [leaving-pr-comments](leaving-pr-comments/SKILL.md) | Follow conventions for GitHub comments. |
 | [modernize](modernize/SKILL.md) | Bring older pull requests up to date. |
 | [pls](pls/SKILL.md) | Publish documents through the configured page service. |
