@@ -1,0 +1,25 @@
+{
+  "name": "noise",
+  "about": "NOISE (legitimate-company/noise): paper canvas, sage tiles, deep-sage dark tiles, one lime accent, Bricolage Grotesque in the display cut, Fragment Mono for records. Values mirror resources/design/tokens.edn (day column + plate). Goat approved rounded, gapped tiles for announcement bentos on 2026-10-11; the print family's ruled-sheet rule still governs every other NOISE surface.",
+  "colors": {
+    "canvas": "#f2f4ee",
+    "tile": "#e3e8df",
+    "ink": "#2d4638",
+    "mute": "#516a59",
+    "dark": "#2d4638",
+    "on_dark": "#f2f4ee",
+    "on_dark_mute": "#d3e0d6",
+    "accent": "#dcff4f",
+    "on_accent": "#1f2f25"
+  },
+  "fonts": {
+    "sans": "\"Bricolage Grotesque\",\"Helvetica Neue\",Arial,sans-serif",
+    "mono": "\"Fragment Mono\",\"SF Mono\",Menlo,Consolas,monospace",
+    "faces": [
+      {"family": "Bricolage Grotesque", "file": "bricolage-grotesque-var.woff2", "weight": "200 800", "stretch": "75% 100%"},
+      {"family": "Fragment Mono", "file": "fragment-mono-400.woff2", "weight": "400"}
+    ]
+  },
+  "display": {"weight": 800, "stretch": "75%", "tracking": "-.012em", "char_width": 0.42},
+  "radius": 32
+}

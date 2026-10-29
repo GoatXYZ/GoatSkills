@@ -1,0 +1,16 @@
+title = "GoatSkills secret checks"
+
+[extend]
+useDefault = true
+
+# This exact conformance key is base64url(bytes(range(32))), not a live credential.
+# Both the path and the exact secret must match; other values remain detectable.
+[[rules]]
+id = "generic-api-key"
+
+[[rules.allowlists]]
+description = "Deterministic signing conformance vector"
+condition = "AND"
+regexTarget = "secret"
+paths = ['''(^|/)pls/scripts/noise_sig\.py$''']
+regexes = ['''^AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8$''']

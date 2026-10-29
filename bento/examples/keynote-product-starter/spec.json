@@ -1,0 +1,31 @@
+{
+  "name": "keynote-product-starter",
+  "title": "Product keynote board starter",
+  "alt": "A dark product keynote board for a sample phone: 21 tiles around the product",
+  "theme": "keynote-dark",
+  "layout": "keynote-product",
+  "css": "product.css",
+  "tiles": [
+    {"slot": "L1a", "type": "feature", "arrange": "bottom", "label": "Satellite\nmessaging", "icon": "satellite-dish", "icon_size": 96, "icon_color": "#30d158"},
+    {"slot": "L2a", "type": "statement", "text": "Crash\nDetection", "gradient": ["#64d2ff", "#0a84ff"]},
+    {"slot": "L1b", "type": "feature", "label": "Tough glass", "icon": "shield", "icon_size": 110, "icon_color": "#bf5af2", "bleed": "bottom"},
+    {"slot": "L2b", "type": "feature", "html": "<div class='chip'>X1<small>CHIP</small></div>"},
+    {"slot": "LW1", "type": "statement", "text": "((ProMotion))"},
+    {"slot": "L1c", "type": "feature", "label": "All-day battery", "html": "<div class='ring'><svg width='46' height='46' viewBox='0 0 24 24' fill='#30d158'><path d='M13 2 3 14h7l-1 8 10-12h-7z'/></svg></div>"},
+    {"slot": "L2c", "type": "feature", "label": "Magnetic\ncharging", "icon": "magnet", "icon_size": 100},
+    {"slot": "LW2", "type": "statement", "text": "Action mode", "gradient": ["#5ac8fa", "#64d2ff", "#0a84ff"], "glow": "0 0 12px rgba(100,210,255,.4)"},
+    {"slot": "CT", "type": "feature", "label": "Introducing the Island", "label_size": 36, "bleed": "bottom", "html": "<div class='screens'><div class='scr'><div class='isl'></div><i class='a'></i><i></i><i></i></div><div class='scr'><div class='isl'></div><i class='b'></i><i></i><i></i></div><div class='scr'><div class='isl'></div><i class='c'></i><i></i><i></i></div></div>"},
+    {"slot": "HERO", "type": "feature", "arrange": "over", "html": "<div class='phone'><div class='cam'><i></i><i></i><i></i></div></div>"},
+    {"slot": "CB1", "type": "feature", "arrange": "bottom", "label": "Pro camera with\n4 zoom options", "label_size": 24, "html": "<div class='zoom'><span>.5</span><span>1</span><span>2</span><span class='on'>3×</span></div>"},
+    {"slot": "CB2", "type": "statement", "text": "48MP", "sub": "Main camera", "max_size": 150},
+    {"slot": "CB3", "type": "feature", "arrange": "bottom", "label": "Photo engine", "label_size": 24, "icon": "layers", "icon_size": 110, "icon_color": "#30d158"},
+    {"slot": "RW1", "type": "statement", "text": "Always-On display"},
+    {"slot": "R1a", "type": "statement", "text": "1600 nits", "sub": "Peak HDR\nbrightness", "sub_size": 22, "gradient": ["#71bcdc", "#0578c4"], "angle": "180deg"},
+    {"slot": "R2a", "type": "statement", "text": "2000 nits", "sub": "Peak outdoor\nbrightness", "sub_size": 22, "gradient": ["#71bcdc", "#0578c4"], "angle": "180deg"},
+    {"slot": "R1b", "type": "feature", "label": "New front camera\nwith autofocus", "label_size": 22, "device": "phone", "device_width": "52%", "bleed": "bottom", "html": "<div class='sky'></div>"},
+    {"slot": "R2b", "type": "feature", "label": "Four new colors", "label_size": 22, "html": "<div class='colors'><i style='background:#2c2c2e'></i><i style='background:#e3e4e5'></i><i style='background:#f2e3c6'></i><i style='background:#5b4b6b'></i></div>"},
+    {"slot": "RW2", "type": "statement", "eyebrow": "New 12MP", "text": "Ultra Wide"},
+    {"slot": "R1c", "type": "feature", "label": "Adaptive flash", "label_size": 22, "icon": "flashlight", "icon_size": 70, "icon_color": "#ffd60a"},
+    {"slot": "R2c", "type": "feature", "arrange": "over", "place": "bottom", "label": "Cinematic 4K", "label_size": 22, "html": "<div class='sky'></div>"}
+  ]
+}

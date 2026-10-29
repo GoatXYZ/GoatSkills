@@ -1,0 +1,25 @@
+{
+  "name": "noise-keynote",
+  "about": "NOISE for the keynote board: paper tiles (ground day #f2f4ee) on the deep sage canvas (#e3e8df), deep-sage plate tiles, one lime accent, Bricolage Grotesque labels and the condensed display cut for the hero. Flat colour only: the brand forbids gradients, glows and shadows and red or green outside the ARPG ground, so app icons are flat squircles and brand marks are one-colour glyphs. Rounded, gapped tiles are the approved bento exception (2026-10-11).",
+  "colors": {
+    "canvas": "#e3e8df",
+    "tile": "#f2f4ee",
+    "ink": "#2d4638",
+    "mute": "#516a59",
+    "dark": "#2d4638",
+    "on_dark": "#f2f4ee",
+    "on_dark_mute": "#d3e0d6",
+    "accent": "#dcff4f",
+    "on_accent": "#1f2f25"
+  },
+  "fonts": {
+    "sans": "\"Bricolage Grotesque\",\"Helvetica Neue\",Arial,sans-serif",
+    "mono": "\"Fragment Mono\",\"SF Mono\",Menlo,Consolas,monospace",
+    "faces": [
+      {"family": "Bricolage Grotesque", "file": "bricolage-grotesque-var.woff2", "weight": "200 800", "stretch": "75% 100%"},
+      {"family": "Fragment Mono", "file": "fragment-mono-400.woff2", "weight": "400"}
+    ]
+  },
+  "display": {"weight": 800, "stretch": "75%", "tracking": "-.012em", "char_width": 0.42},
+  "radius": 30
+}

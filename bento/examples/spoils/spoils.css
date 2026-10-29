@@ -1,0 +1,90 @@
+/* Spoils example: the ARPG ground and rarity inks (NOISE tokens.edn :arpg via arpg.css),
+   item tiles drawn like the Lounge board, and the floating board device. */
+.tile.arpg{background:var(--arpg-ground);color:var(--arpg-ink)}
+/* ARPG ground: the fixed Spoils ground and rarity inks, only inside these tiles. */
+.arpg{
+  --arpg-ground:#121a16;
+  --arpg-ink:#f2f4ee;
+  --arpg-mute:#a3b5a8;
+  --arpg-cell:#5c6f63;
+  --arpg-edge:#8da093;
+  --arpg-fill:#1a251f;
+  --arpg-hover:#22332a;
+  --arpg-deep:#26402f;
+  --arpg-normal:#ffffff;
+  --arpg-grey:#8c8c8c;
+  --arpg-magic:#7a7cff;
+  --arpg-rare:#ffff64;
+  --arpg-set:#00ff00;
+  --arpg-unique:#c7b377;
+  --arpg-crafted:#ffa800;
+  --arpg-red:#ff5050;
+}
+.arpg .hh{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 14px;font:600 28px/1.2 var(--sans);color:var(--arpg-ink)}
+.arpg .hh span{font:400 22px/1.2 var(--mono);color:var(--arpg-mute)}
+.itile{--tc:var(--arpg-normal);position:relative;display:block;width:100%;height:100%;background:var(--arpg-fill);color:var(--tc);outline:2px solid var(--tc);outline-offset:-2px}
+.ink-normal{--tc:var(--arpg-normal)}.ink-grey{--tc:var(--arpg-grey)}.ink-magic{--tc:var(--arpg-magic)}.ink-rare{--tc:var(--arpg-rare)}
+.ink-set{--tc:var(--arpg-set)}.ink-unique{--tc:var(--arpg-unique)}.ink-crafted{--tc:var(--arpg-crafted)}.ink-red{--tc:var(--arpg-red)}
+.mk{fill:currentColor;stroke:currentColor;color:var(--tc)}
+.mk path[fill="none"]{fill:none}
+.mk.blank{display:inline-block}
+.itile .g{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);line-height:0;color:var(--tc)}
+.itile .tmk{position:absolute;right:4px;top:4px}
+.itile .tag{position:absolute;left:4px;top:2px;font:400 13px/1.2 var(--mono);color:var(--arpg-ink)}
+.itile .sk{position:absolute;left:0;right:0;bottom:5px;display:flex;justify-content:center;gap:3px}
+.itile .sk i{width:8px;height:8px;border:1.5px solid var(--arpg-ink);border-radius:50%}
+.itile .sk i.on{background:var(--arpg-ink)}
+.itile .fl{position:absolute;left:4px;bottom:3px;color:var(--arpg-red);line-height:0}
+
+/* The device: the phone in the reference is the Spoils board, doll above pack. */
+.device{position:absolute;inset:0;border-radius:68px;background:var(--dark);padding:14px}
+.screen{height:100%;border-radius:54px;background:var(--arpg-ground);padding:26px 13px 24px;display:flex;flex-direction:column;justify-content:space-between;color:var(--arpg-ink)}
+.status{display:flex;justify-content:space-between;padding:0 6px;font:400 22px/1 var(--mono);color:var(--arpg-mute)}
+.doll{display:grid;grid-template-columns:repeat(10,52px);grid-template-rows:repeat(7,52px);width:520px;align-self:center}
+.slot{position:relative;margin:1px 0 0 1px;min-width:0}
+.grid{position:relative;display:grid;grid-template-columns:repeat(10,var(--c));grid-template-rows:repeat(var(--rows),var(--c));width:calc(10 * var(--c) + 1px);
+  background-color:var(--arpg-ground);background-image:linear-gradient(var(--arpg-cell) 1px,transparent 1px),linear-gradient(90deg,var(--arpg-cell) 1px,transparent 1px);
+  background-size:var(--c) var(--c);border-right:1px solid var(--arpg-cell);border-bottom:1px solid var(--arpg-cell)}
+.screen .grid{align-self:center}
+.screen .hh{width:521px;align-self:center;margin:0 0 8px;font-size:24px}
+.screen .hh span{font-size:20px}
+.cellbox{position:relative;min-width:0;min-height:0;margin:1px 0 0 1px}
+.wsets{display:flex;gap:12px;width:520px;align-self:center}
+.chip{display:inline-flex;align-items:center;height:44px;padding:0 18px;border:1px solid var(--arpg-edge);font:400 20px/1 var(--sans);color:var(--arpg-ink)}
+.chip.on{background:var(--arpg-deep);border-color:var(--arpg-ink);outline:1px solid var(--arpg-ink);outline-offset:-2px;font-weight:600}
+.shelf{display:flex;gap:22px;width:520px;align-self:center}
+.shelf li{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
+.mini{flex:none;display:block;width:48px;height:48px}
+.stx{display:grid;min-width:0}
+.stx b{font:600 20px/1.2 var(--sans);color:var(--tc)}
+.stx .mono{font:400 18px/1.4 var(--mono);color:var(--arpg-mute)}
+
+/* Tier ladder */
+.tiers .hh{margin-bottom:18px;font-size:32px}
+.tiers .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.tiers li{display:flex;align-items:center;gap:14px;height:68px;color:var(--tc);font:600 36px/1 var(--sans)}
+.tiers .rmk{flex:none}
+
+/* Set card, in the board's item-record voice */
+.setcard .sname{font:var(--display-weight) 88px/.98 var(--sans);font-stretch:var(--display-stretch);letter-spacing:var(--display-tracking);color:var(--arpg-set)}
+.setcard .stier{display:flex;align-items:center;gap:10px;margin-top:10px;font:600 30px/1.2 var(--sans);color:var(--arpg-set)}
+.setcard .stier .mk{color:var(--arpg-set)}
+.setcard .pieces{margin-top:26px;font:400 34px/1.3 var(--sans);color:var(--arpg-set)}
+.setcard .bonus{margin-top:30px;font:400 30px/1.3 var(--sans);color:var(--arpg-set)}
+.setcard .bonus li+li{margin-top:10px}
+.setcard .flav{margin-top:34px;font:400 30px/1.28 var(--sans);color:var(--arpg-mute)}
+
+/* Unique item record */
+.uhead{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+.uname{font:var(--display-weight) 54px/.98 var(--sans);font-stretch:var(--display-stretch);letter-spacing:var(--display-tracking);color:var(--arpg-unique)}
+.utier{display:flex;align-items:center;gap:10px;margin-top:0;font:600 27px/1.2 var(--sans);color:var(--arpg-unique)}
+.utier .mk{color:var(--arpg-unique)}
+.ucap{flex:none;width:96px;height:96px}
+.lines{margin-top:0;font:400 27px/1.34 var(--sans)}
+.uniq .uflav{margin-top:22px;font:400 25px/1.28 var(--sans);color:var(--arpg-mute)}
+.k-ink{color:var(--arpg-ink)}.k-magic{color:var(--arpg-magic)}
+
+/* Vault */
+.vault .hh{margin-bottom:16px}
+.vgrid{margin:0 auto}
+.vault .vnote{margin-top:30px;font:400 26px/1.3 var(--sans);color:var(--arpg-mute)}

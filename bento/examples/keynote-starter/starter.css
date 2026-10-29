@@ -1,0 +1,25 @@
+/* Keynote starter visuals: plain HTML mock UI, nothing product-specific. */
+.ui{width:100%;height:100%;display:grid;gap:8px;padding:10px;background:#f2f2f7}
+.ui.split{grid-template-columns:1fr 1fr}
+.ui.three{grid-template-columns:1.2fr 1fr 1fr}
+.pane{border-radius:10px;background:#fff;padding:12px;display:flex;flex-direction:column;gap:7px}
+.pane i{display:block;height:10px;border-radius:5px;background:#e5e5ea}
+.pane i.a{background:#0a84ff;width:60%}.pane i.b{background:#ff9f0a;width:40%}.pane i.c{background:#30d158;width:70%}
+.photo{width:100%;height:100%;background:linear-gradient(160deg,#ffb36b 0%,#ff5e3a 45%,#7a2a8c 100%)}
+.photo.cool{background:linear-gradient(160deg,#9be7ff,#3a7bd5 60%,#1e2a78)}
+.dots{display:flex;gap:8px;padding:10px 12px;border-radius:40px;background:#f2f2f7}
+.dots i{width:20px;height:20px;border-radius:10px;display:block}
+.menu{width:100%;border-radius:18px;background:#f2f2f7;padding:10px 0;font:500 20px/1 var(--sans)}
+.menu div{display:flex;gap:10px;padding:12px 20px}
+.menu small{display:block;margin-top:4px;font-size:15px;color:var(--mute)}
+.menu b{width:18px;font-weight:600}
+.pill{display:flex;align-items:center;gap:14px;width:100%;padding:12px 16px;border-radius:18px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);font:600 18px/1.2 var(--sans)}
+.pill small{display:block;font-weight:400;font-size:15px;color:var(--mute)}
+.pill .ring{margin-left:auto;width:34px;height:34px;border-radius:17px;border:4px solid #e5e5ea;border-top-color:#0a84ff}
+.bar{position:relative;width:100%;height:100%;background:#1d1d1f;padding:14px 20px;display:flex;align-items:flex-start;gap:26px;font:500 18px/1 var(--sans);color:#f5f5f7}
+.bar span.on{background:#0a84ff;border-radius:6px;padding:4px 8px;margin:-4px -8px}
+.drop{position:absolute;left:30%;top:46px;width:44%;border-radius:12px;background:#fff;color:#1d1d1f;padding:8px 0;font:400 17px/1 var(--sans)}
+.drop div{padding:10px 16px}
+.list{width:100%;display:flex;flex-direction:column;gap:10px}
+.list div{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:14px;background:#f2f2f7;font:500 18px/1 var(--sans)}
+.list i{width:34px;height:34px;border-radius:8px;display:block;background:linear-gradient(#5ac8fa,#0a84ff)}

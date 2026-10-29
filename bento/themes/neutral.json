@@ -1,0 +1,22 @@
+{
+  "name": "neutral",
+  "about": "The reference look: white canvas, warm grey tiles, near-black ink, system fonts. A starting point when a project has no design system.",
+  "colors": {
+    "canvas": "#ffffff",
+    "tile": "#ecebe9",
+    "ink": "#1f1f1f",
+    "mute": "#5f6368",
+    "dark": "#1f1f1f",
+    "on_dark": "#ffffff",
+    "on_dark_mute": "#c4c7c5",
+    "accent": "#1a73e8",
+    "on_accent": "#ffffff"
+  },
+  "fonts": {
+    "sans": "system-ui,-apple-system,\"Helvetica Neue\",Arial,sans-serif",
+    "mono": "ui-monospace,\"SF Mono\",Menlo,monospace",
+    "faces": []
+  },
+  "display": {"weight": 600, "stretch": "100%", "tracking": "-.02em", "char_width": 0.6},
+  "radius": 32
+}

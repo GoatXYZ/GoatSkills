@@ -1,0 +1,26 @@
+{
+  "name": "keynote",
+  "about": "The Apple keynote feature board: a 16:9 slide of 19 tiles in five columns (578 | 378 | 378 | 279 | 279) and three bands, small tiles stacked in pairs, the hero tile in the centre carrying the product name, a tall and a short tile down the right. Measured from Apple's iPadOS 26 board. Margins and gaps 18.",
+  "canvas": [2000, 1125],
+  "slots": {
+    "TL":   {"rect": [18, 18, 578, 351],    "role": "big, top left: label on top, a UI or product visual bleeding off the bottom"},
+    "T2a":  {"rect": [614, 18, 378, 166],   "role": "wide small: label left, app icon right"},
+    "T2b":  {"rect": [614, 202, 378, 167],  "role": "wide small: label left, app icon or a pair of visuals right"},
+    "T3":   {"rect": [1010, 18, 378, 351],  "role": "square-ish: a photo or full visual with the label over its top"},
+    "T4a":  {"rect": [1406, 18, 279, 166],  "role": "small: label left, app icon right"},
+    "T4b":  {"rect": [1406, 202, 279, 167], "role": "small: label left, app icon right"},
+    "T5a":  {"rect": [1703, 18, 279, 166],  "role": "small: label left, a tiny UI detail right"},
+    "T5b":  {"rect": [1703, 202, 279, 167], "role": "small: label left, a visual bleeding off the right edge"},
+    "ML":   {"rect": [18, 387, 378, 351],   "role": "medium: label on top, a UI panel (menu, message, card)"},
+    "MS":   {"rect": [414, 387, 182, 351],  "role": "narrow tall: label on top, two or three icons stacked"},
+    "HERO": {"rect": [614, 387, 774, 351],  "role": "hero tile: the product name in huge type on a flat or photo background"},
+    "RT":   {"rect": [1406, 387, 576, 440], "role": "big, right: label on top, the richest UI visual"},
+    "BL":   {"rect": [18, 756, 280, 351],   "role": "tall small: label on top, a UI visual bleeding off the bottom or side"},
+    "B2a":  {"rect": [316, 756, 280, 166],  "role": "statement: two or three words in big colored type"},
+    "B2b":  {"rect": [316, 940, 280, 167],  "role": "small: label left, app icon right"},
+    "B3":   {"rect": [614, 756, 378, 351],  "role": "medium: label on top, a UI screen"},
+    "B4a":  {"rect": [1010, 756, 378, 166], "role": "wide small: label on top, one UI row (a progress pill, a notification)"},
+    "B4b":  {"rect": [1010, 940, 378, 167], "role": "statement: a short claim in big colored type"},
+    "RB":   {"rect": [1406, 845, 576, 262], "role": "wide, bottom right: label on top, a UI strip bleeding off the bottom; or the one accent tile"}
+  }
+}

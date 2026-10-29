@@ -1,0 +1,61 @@
+/* Weekly board visuals. Flat NOISE colours; ARPG inks only on the ARPG ground. */
+.card{width:100%;height:100%;border-radius:20px 20px 0 0;padding:22px 24px;overflow:hidden}
+.card.dk{background:var(--dark);color:var(--on-dark)}
+.card.sg{background:var(--canvas);color:var(--ink)}
+.mono{font-family:var(--mono)}
+/* Longhouse */
+.lh{background:#121a16;color:#f2f4ee;width:88%;align-self:flex-end}
+.lh .h{display:flex;justify-content:space-between;align-items:baseline;font:600 24px/1.2 var(--sans)}
+.lh .h span{font:400 18px/1 var(--mono);color:#a3b5a8}
+.lh .k{margin:8px 0 14px;font:400 18px/1.2 var(--mono);color:#a3b5a8}
+.lh ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px}
+.lh li{display:flex;justify-content:space-between;align-items:baseline;font:600 24px/1.1 var(--sans)}
+.lh li i{font-style:normal;margin-right:8px}
+.lh li span{font:400 18px/1 var(--mono);color:#a3b5a8}
+.ink-normal{color:#ffffff}.ink-magic{color:#7a7cff}.ink-rare{color:#ffff64}.ink-set{color:#00ff00}.ink-unique{color:#c7b377}
+/* Flight board */
+.fb{width:100%}
+.fb .rt{white-space:nowrap;font:800 54px/1 var(--sans);font-stretch:75%;letter-spacing:-.01em}
+.fb .rt b{color:var(--accent);font-weight:800}
+.fb .pg{position:relative;height:8px;border-radius:4px;background:#43604d;margin:22px 0 12px}
+.fb .pg i{position:absolute;left:0;top:0;bottom:0;width:62%;border-radius:4px;background:var(--accent)}
+.fb .pg svg{position:absolute;left:62%;top:50%;transform:translate(-50%,-50%) rotate(45deg);color:var(--accent)}
+.fb .rw{display:flex;justify-content:space-between;font:400 20px/1.6 var(--mono);color:var(--on-dark-mute)}
+.fb .rw b{font-weight:400;color:var(--on-dark)}
+/* Signal notice */
+.sig{position:relative;width:100%}
+.sig .bub{background:var(--canvas);border-radius:22px 22px 22px 6px;padding:16px 18px;font:400 19px/1.36 var(--sans);color:var(--ink)}
+.sig .bub b{font-weight:600}
+.sig .rx{position:absolute;left:18px;bottom:-22px;background:var(--tile);border:2px solid var(--canvas);border-radius:20px;padding:4px 12px;font:400 24px/1 var(--sans)}
+/* migration chips */
+.chips{display:flex;flex-direction:column;gap:14px;align-items:center}
+.chip{display:flex;align-items:center;gap:8px;width:126px;height:62px;justify-content:center;border-radius:16px;background:var(--dark);color:var(--on-dark);font:400 24px/1 var(--mono)}
+.chip.l{background:var(--accent);color:var(--on-accent)}
+/* week chart */
+.wc{width:100%;height:100%;display:flex;flex-direction:column}
+.wc .lg{display:flex;gap:20px;font:400 19px/1 var(--mono);color:var(--on-dark-mute)}
+.wc .lg i{display:inline-block;width:14px;height:14px;border-radius:7px;margin-right:7px;vertical-align:-1px}
+.wc .cols{flex:1;display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin-top:18px}
+.wc .col{flex:1;display:flex;flex-direction:column;align-items:center;gap:10px}
+.wc .bars{display:flex;align-items:flex-end;gap:5px;height:200px}
+.wc .bars i{display:block;width:18px;border-radius:5px 5px 0 0;position:relative}
+.wc .bars i::after{content:attr(data-n);position:absolute;top:-22px;left:50%;transform:translateX(-50%);font:400 15px/1 var(--mono);color:var(--on-dark-mute)}
+.wc .d{font:600 20px/1 var(--sans)}
+.k1{background:var(--on-dark)}.k2{background:var(--accent)}.k3{background:#8da093}
+/* ticker */
+.tk .sym{font:400 22px/1 var(--mono);color:var(--accent)}
+.tk .nm{margin-top:8px;font:700 26px/1.05 var(--sans)}
+.tk .lq{margin-top:8px;font:400 18px/1 var(--mono);color:var(--on-dark-mute)}
+.tk svg{display:block;margin-top:14px}
+/* issue list */
+.il ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0}
+.il li{display:grid;grid-template-columns:62px 1fr;align-items:center;padding:12px 0;border-bottom:1px solid #c9d3c6;font:500 19px/1.2 var(--sans)}
+.il li:last-child{border-bottom:0}
+.il li svg{color:var(--mute)}
+.il li .n{font:400 18px/1 var(--mono);color:var(--mute)}
+.il li .t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* reaction pill */
+.rxp{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:30px;background:var(--canvas);font:400 40px/1 var(--sans)}
+.rxp span{font:400 22px/1 var(--mono);color:var(--mute)}
+.tk svg{width:100%;height:auto}
+.tk .nm{white-space:nowrap}

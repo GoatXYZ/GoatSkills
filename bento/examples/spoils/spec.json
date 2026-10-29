@@ -1,0 +1,22 @@
+{
+  "name": "spoils-bento",
+  "title": "Spoils, the !arpg module",
+  "alt": "Spoils announcement bento: item tiers, 43% chance, Casket, 500 starting gold, Wicktrimmer's Cap, Mabbot's Rounds, a Vault drawer and the Spoils board",
+  "theme": "noise",
+  "layout": "canonical",
+  "css": "spoils.css",
+  "tiles": [
+    {"slot": "A", "type": "html", "tone": "dark", "class": "arpg tiers", "html_file": "parts/tiers.html"},
+    {"slot": "B", "type": "stat", "label": "Every new hero starts with", "label_size": 26, "figure": "500 gold", "figure_size": 68},
+    {"slot": "C", "type": "icon", "icon": "box", "caption": "Casket at level 12"},
+    {"slot": "D", "type": "html", "tone": "dark", "class": "arpg setcard", "html_file": "parts/mabbots-rounds.html"},
+    {"slot": "T1", "type": "stat", "figure": "43%", "figure_size": 92, "caption": "chance of Spoils on eligible plays from 1,000 tokens", "caption_size": 26},
+    {"slot": "T2", "type": "icon", "icon": "coins", "caption": "Gold never becomes tokens"},
+    {"slot": "HERO", "type": "html", "tone": "none", "html_file": "parts/board.html"},
+    {"slot": "BL", "type": "stat", "figure": "100 gold", "figure_size": 76, "caption": "per item at the Appraiser"},
+    {"slot": "BR", "type": "logo", "text": "NOISE", "figure_size": 84},
+    {"slot": "E", "type": "html", "tone": "dark", "class": "arpg uniq", "html_file": "parts/wicktrimmers-cap.html"},
+    {"slot": "F", "type": "stat", "tone": "accent", "figure": "Send !arpg", "figure_size": 124, "caption": "to open the Spoils menu, or !arpg lounge for a private Lounge link", "caption_size": 32},
+    {"slot": "G", "type": "html", "tone": "dark", "class": "arpg vault", "html_file": "parts/vault.html"}
+  ]
+}

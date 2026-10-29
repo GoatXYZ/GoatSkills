@@ -1,0 +1,206 @@
+{
+ "name": "noise-weekly-board-2026-10-28",
+ "title": "NOISE weekly review, week 44",
+ "alt": "NOISE weekly review board for Oct 23 to 28: mercenaries in Spoils, music pages, album covers on Signal, shareable flight boards, the Threads reader, video downloads, quicker reactions, two Furb actions at once, admin approval, 11 migrations, the week on main, Rug Pull, 47 pull requests, gear-gated Hell, 31 issues found and 33 closed, BuildKit builds, 123 commits, and one decision on paused module reviews",
+ "theme": "noise-keynote",
+ "layout": "keynote",
+ "css": "board.css",
+ "tiles": [
+  {
+   "slot": "TL",
+   "type": "feature",
+   "label": "Hire a mercenary",
+   "sub": "Five rolled candidates in the Longhouse",
+   "html_file": "parts/merc.html",
+   "bleed": "bottom"
+  },
+  {
+   "slot": "T2a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Album covers\non Signal",
+   "label_size": 28,
+   "app": {
+    "icon": "image",
+    "color": "#dcff4f",
+    "glyph": "#1f2f25"
+   },
+   "app_size": 104
+  },
+  {
+   "slot": "T2b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Music\npages",
+   "label_size": 28,
+   "apps": [
+    {
+     "icon": "si:spotify"
+    },
+    {
+     "icon": "si:applemusic"
+    },
+    {
+     "icon": "si:youtubemusic"
+    }
+   ],
+   "app_size": 62,
+   "apps_gap": 10
+  },
+  {
+   "slot": "T3",
+   "type": "feature",
+   "label": "Flight boards",
+   "sub": "!flight share",
+   "html_file": "parts/flight.html",
+   "bleed": "bottom"
+  },
+  {
+   "slot": "T4a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Threads\nreader",
+   "label_size": 28,
+   "app": {
+    "icon": "si:threads"
+   },
+   "app_size": 96
+  },
+  {
+   "slot": "T4b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Video\ndownloads",
+   "sub": "!ytdlp",
+   "label_size": 26,
+   "app": {
+    "icon": "download"
+   },
+   "app_size": 84
+  },
+  {
+   "slot": "T5a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Quicker\nreactions",
+   "label_size": 28,
+   "html": "<div class=\"rxp\">👀</div>"
+  },
+  {
+   "slot": "T5b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Two Furb\nactions\nat once",
+   "label_size": 28,
+   "apps": [
+    {
+     "icon": "sparkles",
+     "color": "#dcff4f",
+     "glyph": "#1f2f25"
+    },
+    {
+     "icon": "sparkles"
+    }
+   ],
+   "apps_direction": "column",
+   "app_size": 52,
+   "apps_gap": 8
+  },
+  {
+   "slot": "ML",
+   "type": "feature",
+   "label": "Requests wait for a 👍",
+   "html_file": "parts/approval.html",
+   "visual_style": "align-items:flex-start"
+  },
+  {
+   "slot": "MS",
+   "type": "feature",
+   "label": "11 new\nmigrations",
+   "label_size": 26,
+   "html_file": "parts/migrations.html"
+  },
+  {
+   "slot": "HERO",
+   "type": "statement",
+   "tone": "dark",
+   "font": "display",
+   "text": "NOISE",
+   "color": "#dcff4f",
+   "max_size": 280,
+   "sub": "Week 44 · Oct 23 to 28",
+   "sub_size": 30
+  },
+  {
+   "slot": "RT",
+   "type": "feature",
+   "label": "A week on main",
+   "sub": "Friday 16:00 to Wednesday 20:21 ET",
+   "html_file": "parts/week.html",
+   "bleed": "bottom"
+  },
+  {
+   "slot": "BL",
+   "type": "feature",
+   "label": "Rug Pull",
+   "sub": "!rugpull buy",
+   "html_file": "parts/ticker.html",
+   "bleed": "bottom"
+  },
+  {
+   "slot": "B2a",
+   "type": "statement",
+   "tone": "dark",
+   "text": "47 pull\nrequests",
+   "color": "#dcff4f"
+  },
+  {
+   "slot": "B2b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Gear\ngates\nHell",
+   "label_size": 28,
+   "app": {
+    "icon": "flame",
+    "glyph": "#dcff4f"
+   },
+   "app_size": 88
+  },
+  {
+   "slot": "B3",
+   "type": "feature",
+   "label": "31 issues found, 33 closed",
+   "sub": "Nothing is open",
+   "html_file": "parts/issues.html",
+   "bleed": "bottom"
+  },
+  {
+   "slot": "B4a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Every image\nbuilds on BuildKit",
+   "label_size": 28,
+   "app": {
+    "icon": "container",
+    "color": "#dcff4f",
+    "glyph": "#1f2f25"
+   },
+   "app_size": 96
+  },
+  {
+   "slot": "B4b",
+   "type": "statement",
+   "text": "123 commits\non main"
+  },
+  {
+   "slot": "RB",
+   "type": "statement",
+   "tone": "accent",
+   "font": "display",
+   "text": "Your call",
+   "max_size": 120,
+   "sub": "All five module reviews are paused in T3.\nBring them back, or retire them?",
+   "sub_size": 28
+  }
+ ]
+}

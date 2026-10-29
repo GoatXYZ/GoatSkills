@@ -1,0 +1,21 @@
+{
+  "name": "starter",
+  "title": "Starter bento",
+  "alt": "A starter bento with placeholder copy in every slot",
+  "theme": "neutral",
+  "layout": "canonical",
+  "tiles": [
+    {"slot": "A", "type": "list", "eyebrow": "What it is", "title": "Product name", "lines": ["One concrete capability", "Another concrete capability", "A third, still concrete"], "note": "A short line of voice or flavour from the product itself."},
+    {"slot": "B", "type": "stat", "label": "Starts at", "figure": "$799"},
+    {"slot": "C", "type": "icon", "icon": "smartphone", "caption": "Platform 17"},
+    {"slot": "D", "type": "list", "eyebrow": "The detail people ask about", "title": "Feature", "lines": [{"text": "Highlighted line", "color": "#8ab4f8"}, "Supporting line", "Supporting line"], "note": "Use the tall tiles for the richest visual you have: a real screenshot, a record, a grid."},
+    {"slot": "T1", "type": "stat", "figure": "3000 nits", "caption": "Peak brightness"},
+    {"slot": "T2", "type": "icon", "icon": "battery-full", "caption": "Up to 48 hours"},
+    {"slot": "HERO", "type": "html", "tone": "none", "html": "<div style=\"position:absolute;inset:0;border-radius:72px;background:#1f1f1f;display:grid;place-items:center;color:#fff;font:600 40px/1.2 system-ui;text-align:center;padding:40px\">The hero: the product or its UI, floating, no tile</div>"},
+    {"slot": "BL", "type": "stat", "figure": "4K120", "caption": "Video"},
+    {"slot": "BR", "type": "logo", "text": "Brand"},
+    {"slot": "E", "type": "list", "title": "30x zoom", "lines": ["A big visual with overlay text, or a record"]},
+    {"slot": "F", "type": "stat", "tone": "accent", "figure": "Get it now", "caption": "The one call to action, named with its command or price"},
+    {"slot": "G", "type": "list", "eyebrow": "Tall tile", "title": "2x Telephoto", "lines": ["A portrait photo or a tall UI capture works best here"]}
+  ]
+}

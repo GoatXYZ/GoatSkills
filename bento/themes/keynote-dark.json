@@ -1,0 +1,28 @@
+{
+  "name": "keynote-dark",
+  "about": "Apple's dark keynote board (iPhone 14 Pro and iPhone 16 Pro summary slides): black tiles on #181818, white labels, statements in a purple glow gradient, blue stat figures on dark tiles via the tile's own gradient. Colours sampled from the slides. System font stack; SF Pro is never embedded.",
+  "colors": {
+    "canvas": "#181818",
+    "tile": "#000000",
+    "ink": "#f5f5f7",
+    "mute": "#a1a1a6",
+    "dark": "#1c1c1e",
+    "on_dark": "#f5f5f7",
+    "on_dark_mute": "#a1a1a6",
+    "accent": "#0071e3",
+    "on_accent": "#ffffff"
+  },
+  "fonts": {
+    "sans": "-apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Helvetica Neue\",Arial,sans-serif",
+    "mono": "\"SF Mono\",ui-monospace,Menlo,monospace",
+    "faces": []
+  },
+  "display": {"weight": 700, "stretch": "100%", "tracking": "-.025em", "char_width": 0.56},
+  "statement": {
+    "char_width": 0.53,
+    "light": {"gradient": ["#a241d4", "#e172fd", "#b270ce"], "angle": "90deg", "glow": "0 0 calc(14px * var(--s)) rgba(214,98,252,.45)"},
+    "dark": {"gradient": ["#a241d4", "#e172fd", "#b270ce"], "angle": "90deg", "glow": "0 0 calc(14px * var(--s)) rgba(214,98,252,.45)"}
+  },
+  "radius": 26,
+  "css": ".flab{font-weight:600}\n.tone-light .fsub{color:var(--mute)}"
+}

@@ -1,58 +1,55 @@
-# 🐐 GoatSkills
+# GoatSkills
 
-**A collection of AI agent skills and autonomous development workflows.**
+Private backup of personal AI agent skills, with an inventory of provider-managed skills. Keep this repository private: the backup preserves project examples and local setup instructions.
 
-Define, document, and share reusable skill definitions for AI coding agents. Each skill is self-contained with its own specification, invocation rules, and agent configurations.
+## Personal skills
 
----
+The October 29, 2026 snapshot contains 15 skills from `~/.agents/skills`, plus the existing Goatnomious skill. Definitions, scripts, references, examples, fonts, and existing license notices are preserved. Bytecode and caches are excluded.
 
-## ✨ Skills
+| Skill | Purpose |
+| --- | --- |
+| [babysit-pr](babysit-pr/SKILL.md) | Monitor pull requests through review and CI. |
+| [bento](bento/SKILL.md) | Create announcement and release images. |
+| [copywriting](copywriting/SKILL.md) | Write and improve marketing copy. |
+| [council](council/SKILL.md) | Gather reviews from multiple model providers. |
+| [deepen](deepen/SKILL.md) | Refine a task into a stronger prompt. |
+| [diagram-design](diagram-design/SKILL.md) | Create diagrams and charts. |
+| [file-pr](file-pr/SKILL.md) | Open concise pull requests. |
+| [frontend-design](frontend-design/SKILL.md) | Guide interface design. |
+| [full-send](full-send/SKILL.md) | Finish authorized development work through merge. |
+| [full-stop](full-stop/SKILL.md) | Prepare development work for a human to merge. |
+| [goatnomious](goatnomious/SKILL.md) | Plan and execute multi-step development work. |
+| [leaving-pr-comments](leaving-pr-comments/SKILL.md) | Follow conventions for GitHub comments. |
+| [modernize](modernize/SKILL.md) | Bring older pull requests up to date. |
+| [pls](pls/SKILL.md) | Publish documents through the configured page service. |
+| [sol-loop](sol-loop/SKILL.md) | Iterate on code review findings. |
+| [takeover](takeover/SKILL.md) | Take over existing work. |
 
-### 🤖 Goatnomious
+[The personal inventory](inventory/personal-skills.json) records a SHA-256 checksum for every copied file. This is a snapshot, not an automatic sync; the installed skills remain unchanged.
 
-A plan-first autonomous development workflow for AI agents. Gathers clarifications, writes detailed implementation plans, self-critiques through multiple iterations, then executes task-by-task.
+## Provider-managed skills
 
-**Key capabilities:**
-- 📋 **Plan writing** — Comprehensive task mapping with exact file paths and commands
-- 🔄 **Self-hardening** — Up to 5 iterations of autonomous plan critique
-- ⚡ **Task execution** — Subagent dispatch with spec and code-quality review
-- 🛑 **Hard stops** — Pauses only for missing dependencies, contradictory failures, or blocked tasks
+[The provider inventory](inventory/provider-skills.json) records 94 skill definitions with names, package versions where available, relative paths, and checksums. It covers the latest locally cached plugin versions, Codex system skills, and Claude synced skills; presence on disk does not prove that a skill is currently enabled. Provider-managed content and account settings are not copied.
 
-**Invocation:** Explicit only — use `$goatnomious` or direct naming.
+## Secret checks
 
----
+Install [Gitleaks](https://github.com/gitleaks/gitleaks), then run from any directory:
 
-## 🏗️ Structure
-
+```bash
+/path/to/GoatSkills/scripts/check-secrets
 ```
-GoatSkills/
-└── goatnomious/
-    ├── SKILL.md              # Complete skill specification
-    └── agents/
-        └── openai.yaml       # OpenAI agent configuration
-```
 
-Each skill lives in its own directory with:
-- 📄 `SKILL.md` — Full specification, phases, and execution rules
-- ⚙️ `agents/` — Platform-specific agent configurations (OpenAI, Claude, etc.)
+Run `python3 scripts/test-secret-check.py` from the repository to test the scanner exception and history detection with temporary synthetic fixtures.
 
----
+The check scans the working directory and all locally available Git history with redacted output. Fetch remote branches and tags before checking history. A failed scan must be reviewed before pushing. The configuration permits only the exact deterministic signing test key in `pls/scripts/noise_sig.py`; it does not exempt the rest of the file.
 
-## ➕ Adding a Skill
+[The audit notes](AUDIT.md) explain what was checked and which non-secret details remain. A passing secret scan is not approval to make this backup public.
 
-1. Create a new directory: `my-skill/`
-2. Write `SKILL.md` with invocation rules, workflow phases, and execution guidelines
-3. Add agent configs in `agents/` for each target platform
-4. Open a PR
+## Sources and licenses
 
----
+Original repository material uses the [MIT license](LICENSE). Copied third-party skills and assets retain their upstream terms and attribution; the root license does not replace them.
 
-## 📄 License
-
-MIT
-
----
-
-<p align="center">
-  🐐 Built by <a href="https://github.com/GoatXYZ">GOAT.XYZ</a>
-</p>
+- `frontend-design`: installed from [anthropics/skills](https://github.com/anthropics/skills), with its Apache 2.0 license retained.
+- `copywriting`: installed from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), with local revisions and attribution in the skill.
+- `diagram-design`: installed from [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design), declaring MIT in its definition.
+- Bundled font license notices remain under `bento/assets/fonts/`.

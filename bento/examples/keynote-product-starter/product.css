@@ -1,0 +1,19 @@
+/* Product board starter: an illustrative product, flat shapes only. */
+.phone{position:absolute;left:50%;top:50%;width:46%;aspect-ratio:2.05/1;transform:translate(-50%,-46%) rotate(-8deg);border-radius:60px;background:linear-gradient(160deg,#6b5b7b,#2a2233 60%,#141018);box-shadow:inset 0 0 0 4px #8a7a9a}
+.phone .cam{position:absolute;left:7%;top:12%;width:30%;aspect-ratio:1;border-radius:28%;background:#3a3140;box-shadow:inset 0 0 0 3px #6b5b7b}
+.phone .cam i{position:absolute;width:42%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 35%,#3b4a6b,#05060a 60%);box-shadow:0 0 0 4px #1a161d}
+.phone .cam i:nth-child(1){left:6%;top:6%}.phone .cam i:nth-child(2){right:6%;top:30%}.phone .cam i:nth-child(3){left:6%;bottom:6%}
+.screens{display:flex;gap:26px;justify-content:center;width:100%}
+.scr{width:180px;height:300px;border-radius:34px;background:#1c1c1e;border:6px solid #2c2c2e;padding:16px 12px}
+.scr .isl{width:60%;height:26px;margin:0 auto 14px;border-radius:13px;background:#000}
+.scr i{display:block;height:64px;border-radius:14px;margin-bottom:10px;background:#2c2c2e}
+.scr i.a{background:#0a84ff}.scr i.b{background:#ff9f0a}.scr i.c{background:#bf5af2}
+.ring{width:110px;height:110px;border-radius:50%;border:12px solid #30d158;display:flex;align-items:center;justify-content:center}
+.chip{width:120px;height:120px;border-radius:22px;background:#1c1c1e;border:2px solid #3a3a3c;display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 34px/1 var(--sans);color:#f5f5f7}
+.chip small{font-size:15px;letter-spacing:.2em;color:#a1a1a6;margin-top:4px}
+.colors{display:flex;gap:10px}
+.colors i{display:block;width:34px;height:110px;border-radius:14px}
+.zoom{display:flex;gap:12px;padding:10px 14px;border-radius:30px;background:#1c1c1e;font:600 20px/1 var(--sans);color:#f5f5f7}
+.zoom span{width:42px;height:42px;border-radius:21px;display:flex;align-items:center;justify-content:center;background:#2c2c2e}
+.zoom span.on{background:#3a3a3c;color:#ffd60a}
+.sky{width:100%;height:100%;background:linear-gradient(170deg,#ffb36b,#d9485f 55%,#2b1d3a)}

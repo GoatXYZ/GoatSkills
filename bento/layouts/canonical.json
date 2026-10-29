@@ -1,0 +1,19 @@
+{
+  "name": "canonical",
+  "about": "The classic 12-piece launch bento: four big corner tiles, paired small tiles, a floating hero in the middle column, one statement tile, one logo tile. Margins 60 x 44, gaps 22.",
+  "canvas": [2000, 1620],
+  "slots": {
+    "A":    {"rect": [60, 44, 606, 472],    "role": "big tile, top left: a visual or record"},
+    "B":    {"rect": [60, 540, 248, 242],   "role": "small: label over a figure (Starts at $799)"},
+    "C":    {"rect": [330, 540, 336, 242],  "role": "small: icon over a short caption"},
+    "D":    {"rect": [60, 808, 606, 766],   "role": "tall tile, bottom left: the richest visual or record"},
+    "T1":   {"rect": [688, 44, 352, 244],   "role": "small: the headline number and its caption"},
+    "T2":   {"rect": [1062, 44, 250, 244],  "role": "small: icon over a short caption"},
+    "HERO": {"rect": [712, 312, 576, 994],  "role": "floating hero, no tile: the product or UI itself"},
+    "BL":   {"rect": [688, 1330, 334, 244], "role": "small: figure and caption"},
+    "BR":   {"rect": [1044, 1330, 268, 244],"role": "small: logo or wordmark"},
+    "E":    {"rect": [1334, 44, 606, 396],  "role": "big tile, top right: a visual with overlay text, or a record"},
+    "F":    {"rect": [1334, 462, 606, 318], "role": "statement tile: a big name or the one call to action (accent)"},
+    "G":    {"rect": [1334, 802, 606, 772], "role": "tall tile, bottom right: a visual or record"}
+  }
+}

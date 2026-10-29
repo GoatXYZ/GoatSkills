@@ -1,0 +1,28 @@
+{
+  "name": "keynote-product",
+  "about": "Apple's product keynote board (iPhone 14 Pro, September 2022): a 16:9 slide of 21 tiles, the product photo filling the centre hero, a wide tile above it and three below, and two columns of small tiles on each side with a wide statement band between them. Measured from the slide and scaled to 2000 px. Margins and gaps 20.",
+  "canvas": [2000, 1125],
+  "slots": {
+    "L1a":  {"rect": [20, 20, 227, 210],    "role": "small: a visual with the label under it"},
+    "L2a":  {"rect": [267, 20, 227, 210],   "role": "small statement: two words in colour"},
+    "L1b":  {"rect": [20, 250, 227, 210],   "role": "small: label on top, a product detail cropped below"},
+    "L2b":  {"rect": [267, 250, 227, 210],  "role": "small: a chip or part, as an object"},
+    "LW1":  {"rect": [20, 480, 474, 163],   "role": "wide statement: one feature name in big coloured type"},
+    "L1c":  {"rect": [20, 663, 227, 253],   "role": "tall small: label on top, a big icon"},
+    "L2c":  {"rect": [267, 663, 227, 253],  "role": "tall small: label on top, an accessory or object"},
+    "LW2":  {"rect": [20, 936, 474, 169],   "role": "wide statement"},
+    "CT":   {"rect": [514, 20, 972, 257],   "role": "wide, above the hero: label on top, three screens bleeding off the bottom"},
+    "HERO": {"rect": [514, 297, 972, 532],  "role": "hero: the product photo or render, filling the tile"},
+    "CB1":  {"rect": [514, 849, 278, 256],  "role": "bottom: a UI detail with a two-line label under it"},
+    "CB2":  {"rect": [812, 849, 376, 256],  "role": "bottom centre: a big figure with its label under it (48MP)"},
+    "CB3":  {"rect": [1208, 849, 278, 256], "role": "bottom: a visual with the label under it"},
+    "RW1":  {"rect": [1506, 20, 474, 258],  "role": "wide statement"},
+    "R1a":  {"rect": [1506, 298, 227, 164], "role": "stat: a coloured figure over a two-line caption"},
+    "R2a":  {"rect": [1753, 298, 227, 164], "role": "stat: its pair"},
+    "R1b":  {"rect": [1506, 482, 227, 251], "role": "tall small: label on top, a screen or photo below"},
+    "R2b":  {"rect": [1753, 482, 227, 251], "role": "tall small: label on top, the product colours"},
+    "RW2":  {"rect": [1506, 753, 474, 164], "role": "wide statement with a small eyebrow (New 12MP / Ultra Wide)"},
+    "R1c":  {"rect": [1506, 937, 227, 168], "role": "small: label on top, an object below"},
+    "R2c":  {"rect": [1753, 937, 227, 168], "role": "small: a photo with the label over it"}
+  }
+}

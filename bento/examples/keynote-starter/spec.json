@@ -1,0 +1,221 @@
+{
+ "name": "keynote-starter",
+ "title": "Keynote board starter",
+ "alt": "A keynote feature board for a sample product: 19 tiles around the product name",
+ "theme": "keynote-light",
+ "layout": "keynote",
+ "css": "starter.css",
+ "tiles": [
+  {
+   "slot": "TL",
+   "type": "feature",
+   "label": "Split view",
+   "device": "tablet",
+   "device_width": "86%",
+   "bleed": "bottom",
+   "html": "<div class='ui split'><div class='pane'><i class='a'></i><i></i><i></i><i></i></div><div class='pane'><i class='b'></i><i></i><i class='c'></i><i></i></div></div>"
+  },
+  {
+   "slot": "T2a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Updated\nFiles app",
+   "app": {
+    "icon": "folder",
+    "colors": [
+     "#5ac8fa",
+     "#0a84ff"
+    ],
+    "glyph": "#fff"
+   }
+  },
+  {
+   "slot": "T2b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "New\nstickers",
+   "apps": [
+    {
+     "icon": "smile",
+     "colors": [
+      "#ffd60a",
+      "#ff9f0a"
+     ],
+     "glyph": "#fff"
+    },
+    {
+     "icon": "heart",
+     "colors": [
+      "#ff6482",
+      "#ff2d55"
+     ],
+     "glyph": "#fff"
+    }
+   ],
+   "app_size": 96
+  },
+  {
+   "slot": "T3",
+   "type": "feature",
+   "arrange": "over",
+   "label": "New design",
+   "style": "color:#fff",
+   "html": "<div class='photo'></div>"
+  },
+  {
+   "slot": "T4a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Games",
+   "app": {
+    "icon": "rocket",
+    "colors": [
+     "#ff6b6b",
+     "#ff2d55"
+    ],
+    "glyph": "#fff"
+   }
+  },
+  {
+   "slot": "T4b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Journal",
+   "app": {
+    "icon": "book-open",
+    "colors": [
+     "#3a3a6e",
+     "#1c1c3a"
+    ],
+    "glyph": "#ff9ff3"
+   }
+  },
+  {
+   "slot": "T5a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Window\ncontrols",
+   "html": "<div class='dots'><i style='background:#ff5f57'></i><i style='background:#febc2e'></i><i style='background:#28c840'></i></div>",
+   "label_size": 26
+  },
+  {
+   "slot": "T5b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Reed pen",
+   "icon": "pen-tool",
+   "icon_size": 110,
+   "icon_color": "#ff2dd4",
+   "bleed": "edges"
+  },
+  {
+   "slot": "ML",
+   "type": "feature",
+   "label": "Audio input selection",
+   "html": "<div class='menu'><div><b></b><span>Same as System<small>Built-in Microphone</small></span></div><div><b></b><span>Built-in Microphone</span></div><div><b>✓</b><span>Bluetooth Microphone</span></div></div>"
+  },
+  {
+   "slot": "MS",
+   "type": "feature",
+   "label": "Custom\nfolders",
+   "apps": [
+    {
+     "icon": "folder",
+     "colors": [
+      "#5ac8fa",
+      "#0a84ff"
+     ],
+     "glyph": "#fff"
+    },
+    {
+     "icon": "folder",
+     "colors": [
+      "#d6a4ff",
+      "#bf5af2"
+     ],
+     "glyph": "#fff"
+    },
+    {
+     "icon": "folder",
+     "colors": [
+      "#ff8a80",
+      "#ff3b30"
+     ],
+     "glyph": "#fff"
+    }
+   ],
+   "apps_direction": "column",
+   "app_size": 62,
+   "apps_gap": 10
+  },
+  {
+   "slot": "HERO",
+   "type": "statement",
+   "text": "Orbit",
+   "max_size": 260,
+   "color": "#ffffff",
+   "background": "linear-gradient(135deg,#9be7ef 0%,#3a9be0 40%,#0b4fd6 100%)"
+  },
+  {
+   "slot": "RT",
+   "type": "feature",
+   "label": "All-new windowing system",
+   "device": "tablet",
+   "device_width": "82%",
+   "bleed": "bottom",
+   "html": "<div class='ui three'><div class='pane'><i class='a'></i><i></i><i></i></div><div class='pane'><i class='b'></i><i></i><i></i></div><div class='pane'><i class='c'></i><i></i><i></i></div></div>"
+  },
+  {
+   "slot": "BL",
+   "type": "feature",
+   "label": "Folders\nin the Dock",
+   "bleed": "bottom",
+   "html": "<div class='list'><div><i></i>Downloads</div><div><i></i>Portraits</div><div><i></i>Invites</div><div><i></i>Drafts</div></div>"
+  },
+  {
+   "slot": "B2a",
+   "type": "statement",
+   "text": "Live\nTranslation"
+  },
+  {
+   "slot": "B2b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Preview",
+   "app": {
+    "icon": "scan-eye",
+    "colors": [
+     "#64d2ff",
+     "#0a84ff"
+    ],
+    "glyph": "#fff"
+   }
+  },
+  {
+   "slot": "B3",
+   "type": "feature",
+   "label": "Overview",
+   "device": "tablet",
+   "device_width": "88%",
+   "html": "<div class='photo cool'></div>"
+  },
+  {
+   "slot": "B4a",
+   "type": "feature",
+   "label": "Background Tasks",
+   "html": "<div class='pill'><span>Exporting “Timeline 1”<small>43% completed</small></span><span class='ring'></span></div>"
+  },
+  {
+   "slot": "B4b",
+   "type": "statement",
+   "text": "Local audio/\nvideo capture"
+  },
+  {
+   "slot": "RB",
+   "type": "feature",
+   "label": "Menu bar",
+   "bleed": "edges",
+   "html": "<div class='bar'><span>Pages</span><span>File</span><span>Edit</span><span class='on'>Insert</span><span>Format</span><span>View</span><div class='drop'><div>Line Break</div><div>Column Break</div><div>Page Break</div></div></div>"
+  }
+ ]
+}
