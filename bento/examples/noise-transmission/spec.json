@@ -1,0 +1,187 @@
+{
+ "name": "noise-transmission-board",
+ "title": "NOISE Transmission",
+ "alt": "NOISE Transmission launch board: the new hull ceramic design with IBM Plex type, three product gels and three corner sizes; Monopoly back alongside Spoils; Breach and Battleship running as two fire galleries; Orbit charting a 624-sector galaxy; new sodium edition art; all aboard Goatspindle Station.",
+ "theme": "noise-keynote",
+ "layout": "keynote",
+ "css": "board.css",
+ "tiles": [
+  {
+   "slot": "TL",
+   "type": "feature",
+   "label": "Monopoly is back",
+   "sub": "Collect deeds across Goatspindle",
+   "html_file": "parts/deeds.html",
+   "bleed": "bottom"
+  },
+  {
+   "slot": "T2a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Resets on the\n1st and 15th",
+   "app": {
+    "icon": "calendar-days",
+    "color": "var(--flare)",
+    "glyph": "var(--ink)"
+   },
+   "app_size": 88
+  },
+  {
+   "slot": "T2b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Rolls beside\nSpoils drops",
+   "apps": [
+    {
+     "icon": "dice-5",
+     "color": "var(--flare)",
+     "glyph": "var(--ink)"
+    },
+    {
+     "icon": "backpack",
+     "color": "var(--flare)",
+     "glyph": "var(--ink)"
+    }
+   ],
+   "app_size": 62,
+   "apps_gap": 10
+  },
+  {
+   "slot": "T3",
+   "type": "feature",
+   "label": "Breach the Star",
+   "sub": "Eight arms around one Heart",
+   "html_file": "parts/star.html"
+  },
+  {
+   "slot": "T4a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "IBM Plex\ntype",
+   "html_file": "parts/plex.html"
+  },
+  {
+   "slot": "T4b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Day and\nnight",
+   "html_file": "parts/daynight.html"
+  },
+  {
+   "slot": "T5a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "13\nmunitions",
+   "app": {
+    "icon": "crosshair",
+    "color": "var(--flare)",
+    "glyph": "var(--ink)"
+   },
+   "app_size": 88
+  },
+  {
+   "slot": "T5b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Up to 10\nvolleys",
+   "app": {
+    "icon": "layers",
+    "color": "var(--flare)",
+    "glyph": "var(--ink)"
+   },
+   "app_size": 88
+  },
+  {
+   "slot": "ML",
+   "type": "feature",
+   "label": "Three gels",
+   "html_file": "parts/gels.html",
+   "visual_style": "align-items:flex-start"
+  },
+  {
+   "slot": "MS",
+   "type": "feature",
+   "label": "Three\ncorners",
+   "html_file": "parts/corners.html"
+  },
+  {
+   "slot": "HERO",
+   "type": "html",
+   "tone": "dark",
+   "html_file": "parts/hero.html",
+   "style": "padding:0"
+  },
+  {
+   "slot": "RT",
+   "type": "feature",
+   "label": "Battleship",
+   "sub": "Assault the orbital fortress",
+   "html_file": "parts/fortress.html",
+   "bleed": "bottom"
+  },
+  {
+   "slot": "BL",
+   "type": "feature",
+   "tone": "dark",
+   "label": "Sodium\nedition art",
+   "src": "assets/space-03-ringed-giant.png",
+   "fit": "cover",
+   "position": "30% 20%",
+   "class": "artsq"
+  },
+  {
+   "slot": "B2a",
+   "type": "statement",
+   "text": "Two fire\ngalleries",
+   "color": "var(--flare-text)"
+  },
+  {
+   "slot": "B2b",
+   "type": "feature",
+   "arrange": "left",
+   "label": "One shared\nworkshop",
+   "app": {
+    "icon": "wrench",
+    "color": "var(--flare)",
+    "glyph": "var(--ink)"
+   },
+   "app_size": 88
+  },
+  {
+   "slot": "B3",
+   "type": "feature",
+   "label": "Chart the galaxy",
+   "sub": "Orbit: 624 sectors in 12 rings",
+   "html_file": "parts/orbit.html",
+   "bleed": "bottom"
+  },
+  {
+   "slot": "B4a",
+   "type": "feature",
+   "arrange": "left",
+   "label": "Signal and\nDiscord fire\ntogether",
+   "apps": [
+    "si:signal",
+    "si:discord"
+   ],
+   "app_size": 50,
+   "apps_gap": 8,
+   "apps_direction": "column"
+  },
+  {
+   "slot": "B4b",
+   "type": "statement",
+   "text": "43%",
+   "sub": "Monopoly roll on each eligible play",
+   "color": "var(--flare-text)"
+  },
+  {
+   "slot": "RB",
+   "type": "statement",
+   "tone": "accent",
+   "text": "Play in the Lounge",
+   "sub": "!monopoly, !breach, !battleship",
+   "style": "--gel:var(--flare)"
+  }
+ ]
+}

@@ -1,25 +1,49 @@
 {
   "name": "noise-keynote",
-  "about": "NOISE for the keynote board: paper tiles (ground day #f2f4ee) on the deep sage canvas (#e3e8df), deep-sage plate tiles, one lime accent, Bricolage Grotesque labels and the condensed display cut for the hero. Flat colour only: the brand forbids gradients, glows and shadows and red or green outside the ARPG ground, so app icons are flat squircles and brand marks are one-colour glyphs. Rounded, gapped tiles are the approved bento exception (2026-10-11).",
+  "about": "NOISE Transmission for the keynote board: hull ceramic tiles on the bulkhead canvas, hull-blue plate tiles for dark visuals and the hero, blue-graphite ink, IBM Plex Sans labels and the display cut (500, full width) for the hero. Statements take the gel text tone of their product (coolant app, flare Lounge, sodium news); the one act is filled in ink with a gel strip. Flat colour only: no gradients, glows or shadows, no red or green outside a game ground, nothing pill-shaped, so app icons are flat squircles and brand marks one colour. Values from resources/design/tokens.edn. Rounded, gapped tiles are the approved bento exception (2026-10-11); tiles take the 24 px frame radius.",
   "colors": {
-    "canvas": "#e3e8df",
-    "tile": "#f2f4ee",
-    "ink": "#2d4638",
-    "mute": "#516a59",
-    "dark": "#2d4638",
-    "on_dark": "#f2f4ee",
-    "on_dark_mute": "#d3e0d6",
-    "accent": "#dcff4f",
-    "on_accent": "#1f2f25"
+    "canvas": "#cfd9de",
+    "tile": "#e1e8eb",
+    "ink": "#172031",
+    "mute": "#4b586a",
+    "dark": "#1d2c40",
+    "on_dark": "#eef3f7",
+    "on_dark_mute": "#a2b2be",
+    "accent": "#172031",
+    "on_accent": "#eef3f7"
   },
   "fonts": {
-    "sans": "\"Bricolage Grotesque\",\"Helvetica Neue\",Arial,sans-serif",
-    "mono": "\"Fragment Mono\",\"SF Mono\",Menlo,Consolas,monospace",
+    "sans": "\"IBM Plex Sans\",\"Helvetica Neue\",Arial,sans-serif",
+    "mono": "\"IBM Plex Mono\",\"SF Mono\",Menlo,Consolas,monospace",
     "faces": [
-      {"family": "Bricolage Grotesque", "file": "bricolage-grotesque-var.woff2", "weight": "200 800", "stretch": "75% 100%"},
-      {"family": "Fragment Mono", "file": "fragment-mono-400.woff2", "weight": "400"}
+      {
+        "family": "IBM Plex Sans",
+        "file": "ibm-plex-sans-var.woff2",
+        "weight": "100 700",
+        "stretch": "85% 100%"
+      },
+      {
+        "family": "IBM Plex Mono",
+        "file": "ibm-plex-mono-400.woff2",
+        "weight": "400"
+      }
     ]
   },
-  "display": {"weight": 800, "stretch": "75%", "tracking": "-.012em", "char_width": 0.42},
-  "radius": 30
+  "display": {
+    "weight": 500,
+    "stretch": "100%",
+    "tracking": "-.02em",
+    "char_width": 0.56
+  },
+  "statement": {
+    "char_width": 0.56,
+    "light": {
+      "color": "#075e54"
+    },
+    "dark": {
+      "color": "#a7ebe1"
+    }
+  },
+  "radius": 24,
+  "css": ".canvas{--gel:#5fcab8;--gel-text:#075e54;--gel-night:#a7ebe1;--coolant:#5fcab8;--coolant-text:#075e54;--coolant-night:#a7ebe1;--flare:#ff9f84;--flare-text:#97301a;--flare-night:#ffb4a0;--sodium:#f0bd52;--sodium-text:#6c4a00;--sodium-night:#ffd88a;--rule:rgba(23,32,49,.34);--guide:rgba(23,32,49,.15);--plate-rule:rgba(231,237,240,.32);--plate-guide:rgba(231,237,240,.13);--card-radius:calc(14px * var(--s));--control-radius:calc(10px * var(--s))}\n.tone-accent::before{content:\"\";position:absolute;left:0;right:0;top:0;height:calc(12px * var(--s));background:var(--gel)}\n.gel-disc{display:inline-block;width:.62em;height:.62em;border-radius:50%;background:var(--gel);vertical-align:.04em;margin-right:.32em;border:calc(2px * var(--s)) solid var(--ink);box-sizing:border-box}"
 }

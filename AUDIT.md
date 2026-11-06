@@ -1,8 +1,8 @@
-# Private backup audit — October 29, 2026
+# Private backup audit
 
 Decision: retain private visibility. This backup was reviewed for embedded credentials; it was not sanitized for public redistribution.
 
-## Scope and results
+## October 29, 2026 scope and results
 
 - Reviewed both original commits, all four original files, the sole remote branch, commit metadata, and repository metadata. The original history passed Gitleaks 8.30.1 without exceptions. Authors use a GitHub noreply email address; the existing author display name remains in history.
 - Reviewed the 15 personal skill folders, including helpers, references, examples, text assets, and the five JPEG preview images. Checked for credential patterns, personal absolute paths, internal network addresses, email addresses, links, and project-specific material. No live credential was identified. A secret scan cannot prove that every possible credential is absent.
@@ -19,3 +19,11 @@ The `bento` examples retain project branding, activity counts, feature-request t
 ## Repeat before pushing changes
 
 Run `scripts/check-secrets` with Gitleaks installed, then review the diff for confidential context and inspect any new binary assets manually. Keep scan reports outside the repository. The script checks locally available history; fetch other remote refs before relying on it for a complete history review.
+
+## November 6, 2026 refresh
+
+- Refreshed 78 global skills and 36 project-local folders, preserving 1,020 source files and executable permissions. Project variants stay separate. The provider inventory now records 112 definitions without copying provider packages.
+- Added `scripts/sync-skills.py` to refresh the snapshot and compare it with installed sources. The check passed after the refresh. Credential-shaped files and nested file symlinks stop the import for review.
+- Gitleaks 8.30.1 found no leaks in the refreshed working directory or fetched local history. The existing deterministic signing-key exception remains unchanged.
+- Viewed the new Transmission board preview, ringed-planet art, and Yeet icon. The other binary additions are font assets. Copied examples and local paths remain private backup material, with upstream notices retained.
+- Installed skill contents were not rewritten. The README, inventories, and backup tool describe the refreshed snapshot. This work does not authorize public release.

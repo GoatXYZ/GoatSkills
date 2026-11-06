@@ -275,17 +275,29 @@ fine).
   boards, colours sampled from the slides, the system font stack (SF Pro on a
   Mac; never embed SF Pro, its licence forbids it), gradient statements, soft
   app-icon shadows on light.
-- **noise:** NOISE's paper, sage tiles, deep-sage dark tiles, lime accent,
-  Bricolage Grotesque in the display cut (bundled, OFL), values from
-  `resources/design/tokens.edn`. Goat approved rounded, gapped bentos for
-  NOISE announcements on 2026-10-11; every other NOISE export still follows
-  the print family. Rarity colours stay on the ARPG ground (see the Spoils
-  example's `spoils.css`).
-- **noise-keynote:** the same NOISE values arranged like Apple's light
-  board: paper tiles on the deep sage canvas, plate tiles for dark visuals and
-  the hero, lime for the accent and statements on plate. Flat colour only (no
-  gradients, glows or shadows, no red or green outside the ARPG ground), so
-  app icons are flat squircles and brand marks are one colour.
+- **noise:** NOISE's Transmission system (approved 2026-10-31, replacing
+  Verdant's sage and lime): hull ceramic canvas, bulkhead tiles, hull-blue
+  plate tiles for dark visuals, blue-graphite ink, IBM Plex Sans with its
+  display cut at 500 and full width, IBM Plex Mono for records (bundled,
+  OFL), values from `resources/design/tokens.edn`. Tiles take the 24 px frame
+  radius; cards inside a tile use `--card-radius` (14 px) and controls
+  `--control-radius` (10 px), and nothing is pill-shaped. Three gels name the
+  product a tile belongs to: coolant for the app, flare for the Lounge and
+  sodium for news and Static. The theme exposes each as `--coolant`,
+  `--coolant-text` (on ceramic) and `--coolant-night` (on plate), and the
+  same for flare and sodium. A gel is a flat disc (`<span class="gel-disc">`)
+  or an edge strip beside the product's name, never a fill behind running
+  text. Statements default to the coolant text tone; give a tile its own
+  product's tone with `color`. The one act is filled in ink and carries a gel
+  strip on its top edge (set `--gel` in the tile's `style` to change it).
+  Goat approved rounded, gapped bentos for NOISE announcements on 2026-10-11;
+  every other NOISE export still follows the print family. Rarity colours
+  stay on the ARPG ground (see the Spoils example's `spoils.css`).
+- **noise-keynote:** the same Transmission values arranged like Apple's light
+  board: ceramic tiles on the bulkhead canvas, plate tiles for dark visuals
+  and the hero. Flat colour only (no gradients, glows or shadows, no red or
+  green outside a game ground), so app icons are flat squircles and brand
+  marks are one colour.
 
 ## Examples
 
@@ -294,6 +306,8 @@ fine).
 - `examples/spoils/`: the NOISE `!arpg` announcement. It shows custom `html`
   parts (paper doll and pack board as the hero, a Vault grid, item records),
   a scoped stylesheet, and tiles whose facts all trace to source constants.
+  It was made in Verdant; it renders in the current theme, but its art
+  direction predates Transmission.
 - `examples/keynote-starter/` and `examples/keynote-product-starter/`: an
   invented product on the two Apple layouts and themes, every tile shape,
   device frames, app icons, stats, an eyebrow statement and a photo tile.
@@ -303,7 +317,11 @@ fine).
   marks, bleeding UI cards (the Longhouse roster, a flight board, an issue
   list, a week chart), statements and the hero wordmark. Its rolls, prices,
   flight, coin and request hex are illustrative; the counts came from GitHub
-  and git.
+  and git. It predates Transmission: its spec hard-codes Verdant lime
+  (`#dcff4f`), so copy its structure, not its colours.
+- `examples/noise-transmission/`: the Transmission launch board (2026-11-01),
+  the current NOISE look on the keynote layout: gel-coded statements, hairline
+  station drawings, and the Monopoly, Breach, Battleship and Orbit tiles.
 
 ## Gotchas
 

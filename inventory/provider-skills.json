@@ -1,6 +1,6 @@
 {
-  "snapshot_date": "2026-10-29",
-  "scope": "Latest cached plugin versions, Codex system skills, and Claude synced skills; installed files do not prove current availability. Provider content is not copied.",
+  "snapshot_date": "2026-11-06",
+  "scope": "Latest cached plugin versions, Codex system skills, Claude synced skills and Cursor built-ins. Presence does not prove availability. Provider content is not copied.",
   "skills": [
     {
       "provider": "OpenAI",
@@ -43,7 +43,7 @@
       "sha256": "d68b77e5bbb34dedab89d134da52855f140fc4b4299b80104f534e3b9e98f8ee"
     },
     {
-      "provider": "Claude",
+      "provider": "OpenAI",
       "package": "claude-plugins-official/frontend-design",
       "version": "local",
       "name": "frontend-design",
@@ -61,10 +61,10 @@
     {
       "provider": "OpenAI",
       "package": "openai-bundled/visualize",
-      "version": "1.0.57",
+      "version": "1.0.66",
       "name": "visualize",
       "path": "skills/visualize/SKILL.md",
-      "sha256": "766f4e5ee250af9d3c68353d0b8609e40e0ce5926a625d7ca88e073525360d25"
+      "sha256": "155f893d861eb33c8c63b028872e20cfef8a3e94cc336a6a6fe89eba888c2ed3"
     },
     {
       "provider": "OpenAI",
@@ -100,9 +100,25 @@
     },
     {
       "provider": "OpenAI",
+      "package": "openai-curated/plugin-backup-fb6UgW",
+      "version": "github",
+      "name": "gh-address-comments",
+      "path": "1f87561ac4dae225447336612b9304903921bb85/skills/gh-address-comments/SKILL.md",
+      "sha256": "c1ebc337357402f7faabafe712e0c463981a65f736453efe52abd305bcb74769"
+    },
+    {
+      "provider": "OpenAI",
+      "package": "openai-curated/plugin-backup-fb6UgW",
+      "version": "github",
+      "name": "yeet",
+      "path": "1f87561ac4dae225447336612b9304903921bb85/skills/yeet/SKILL.md",
+      "sha256": "93a0bcbc834c9b3ad6a8965c1a273b237b6d226e870cd0c16e08e87bc8769814"
+    },
+    {
+      "provider": "OpenAI",
       "package": "openai-curated-remote/cloud-environment",
       "version": "0.1.2",
-      "name": "cloud-environment-runtime",
+      "name": "runtime",
       "path": "skills/runtime/SKILL.md",
       "sha256": "c23513e361a6f9dbe1c28e5c41de635f355469b4ec1740ae1cd2de1d38a91bd3"
     },
@@ -420,6 +436,14 @@
     },
     {
       "provider": "OpenAI",
+      "package": "openai-curated-remote/plugin-management",
+      "version": "0.1.0",
+      "name": "plugin-management",
+      "path": "skills/plugin-management/SKILL.md",
+      "sha256": "653841cc21205269f08b0ce135891e1518dac616a766bcfb0b57d788d3f68b10"
+    },
+    {
+      "provider": "OpenAI",
       "package": "openai-curated-remote/sales",
       "version": "1.1.3",
       "name": "analyze-account-signals",
@@ -565,15 +589,15 @@
     {
       "provider": "OpenAI",
       "package": "openai-curated-remote/sites",
-      "version": "1.1.2",
+      "version": "1.1.4",
       "name": "sites",
       "path": "skills/sites/SKILL.md",
-      "sha256": "00750ea5ca37e2b49afd2a57fee2149d22ee4f48af40bc094e6d2cee3e7bd1ad"
+      "sha256": "f51bd813c224703a14eb2938cf813954cb546ed72392c842f834dee7dbc06ee6"
     },
     {
       "provider": "OpenAI",
       "package": "openai-curated-remote/sites",
-      "version": "1.1.2",
+      "version": "1.1.4",
       "name": "sites-remix",
       "path": "skills/sites-remix/SKILL.md",
       "sha256": "34a249750d98e38f676fa391819593ab5c14e5f46f9137832a8c49180d47022d"
@@ -630,7 +654,7 @@
       "provider": "OpenAI",
       "package": "openai-primary-runtime/presentations",
       "version": "26.1026.10807",
-      "name": "Presentations",
+      "name": "presentations",
       "path": "skills/presentations/SKILL.md",
       "sha256": "7abcc85f66d28c019963374cea7249c290803e6e64d214f6cd0473bc17559230"
     },
@@ -646,7 +670,7 @@
       "provider": "OpenAI",
       "package": "openai-primary-runtime/spreadsheets",
       "version": "26.1026.10807",
-      "name": "Spreadsheets",
+      "name": "spreadsheets",
       "path": "skills/spreadsheets/SKILL.md",
       "sha256": "25da47cec10100f2a08df9feaa252864a738816aca30562ae6ba111d7b1eb48e"
     },
@@ -660,99 +684,219 @@
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
+      "version": null,
+      "name": "xlsx",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/.staging/46302/xlsx/xlsx/SKILL.md",
+      "sha256": "6712b39718fe815054abca9c3ee72f989613e6f771c8a5c58f30a65a6c905622"
+    },
+    {
+      "provider": "Claude",
+      "package": "synced",
       "version": null,
       "name": "built-in-browser",
-      "path": "built-in-browser/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/built-in-browser/SKILL.md",
       "sha256": "b5a720afbcde0d6a77c1bc1d34ab56f3d4b09d071b92129783b4faf7f2a3fe62"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "chrome-browser",
-      "path": "chrome-browser/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/chrome-browser/SKILL.md",
       "sha256": "c8b0afeee246f333529be3c73c49efaf7d9d10a46d8948b4b736cc758cb4e885"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "computer-use",
-      "path": "computer-use/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/computer-use/SKILL.md",
       "sha256": "ffbf11e989df3b8c135f6c97e188982908a794a4b1ab640a48e6602129a0206b"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "deep-research",
-      "path": "deep-research/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/deep-research/SKILL.md",
       "sha256": "46ae8d5a0b95efad0329ac287ea5248c19fbbe195d8270231c4a78ba6217c024"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "docs",
-      "path": "docs/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/docs/SKILL.md",
       "sha256": "98e4fb5934042152d57bc9cb8c0736d5d8e31c6c0122b13ff5836f4c2411fa3e"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "docx",
-      "path": "docx/SKILL.md",
-      "sha256": "912cb15683a476a285033f9a40c5099248f9c6a06d581b106b95796f9d33d118"
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/docx/SKILL.md",
+      "sha256": "708ff99f88a3b901a8fe86512b4c887e367640fa9732584bdba9fe15fce770e5"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "google-workspace",
-      "path": "google-workspace/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/google-workspace/SKILL.md",
       "sha256": "073e4f759b4aa054be72a4f5bb9d8f51d3df3f8e02149605cf5c5dad3412bc83"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "import-memory",
-      "path": "import-memory/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/import-memory/SKILL.md",
       "sha256": "5179b0780b7025c93271c181636a23acc8d05cad3b20584639cbaf1cf9c3b07a"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "morning",
-      "path": "morning/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/morning/SKILL.md",
       "sha256": "a7c4dbcb745799736991b027cceae39aae4880cc00ff43871ae5e87b38023bdd"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "pdf",
-      "path": "pdf/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/pdf/SKILL.md",
       "sha256": "9f78b8359fbd4943ad260a7a1e436e5a96503406d6c34e99f69223d647d85b9c"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "pptx",
-      "path": "pptx/SKILL.md",
-      "sha256": "710a823f644c0187a88e6d9e8c8385bb646b4844ac28570dbc4e8f9bae013860"
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/pptx/SKILL.md",
+      "sha256": "f03b2dd11f393b3563e5feeb090308e0438e2fd137baa1866ec966f2c426b758"
     },
     {
       "provider": "Claude",
-      "package": "claude-managed",
+      "package": "synced",
       "version": null,
       "name": "xlsx",
-      "path": "xlsx/SKILL.md",
+      "path": "19e29bad-09f9-43f6-996a-058dd908c255_673f4e42-a38e-4657-8d04-f8283cb87284/xlsx/SKILL.md",
       "sha256": "6712b39718fe815054abca9c3ee72f989613e6f771c8a5c58f30a65a6c905622"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "babysit",
+      "path": "babysit/SKILL.md",
+      "sha256": "b46766ed302c34e7b2b52a03b5df706ec6fcaffeed4df2e68b7607939a79d602"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "canvas",
+      "path": "canvas/SKILL.md",
+      "sha256": "621f420fd7ef86519603bb6e4e5f00349d936433cd5b733821f8011c987e3f2e"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "create-hook",
+      "path": "create-hook/SKILL.md",
+      "sha256": "28bfa0c6cd13fa0167c72512fca0da2c6fc24b6eea67c5307bf1ef2bedca61a6"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "create-rule",
+      "path": "create-rule/SKILL.md",
+      "sha256": "fe8499dfe93edbf8306df70498a7ea3572e0c8b340607137cbc836051520263c"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "create-skill",
+      "path": "create-skill/SKILL.md",
+      "sha256": "f3df382ea9cf2119ee8f121143b2ec0cacbd8bbc6dc3a15fd981ea547cef42f8"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "create-subagent",
+      "path": "create-subagent/SKILL.md",
+      "sha256": "ab46a80f90cb3810c3182a55b975b13bcf72e00e7fa907cf49fb3a30a02a3922"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "loop",
+      "path": "loop/SKILL.md",
+      "sha256": "03f141406a7e6f658aaf9d84c526e047896676191931535a0f0f719fa26aaf5c"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "migrate-to-skills",
+      "path": "migrate-to-skills/SKILL.md",
+      "sha256": "78c0483cc96ea3dc833f344ed928d425aff0c64cfcb02759fe5efe4a913a5b6b"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "sdk",
+      "path": "sdk/SKILL.md",
+      "sha256": "0db41158a6b4fd16983ee178649204e98c2f57d182cdec30941a22d866e27435"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "shell",
+      "path": "shell/SKILL.md",
+      "sha256": "b354ce28c70af1d5c05bb6bf070a1823fadd470530993ab271a1cfcbe57ad4fe"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "split-to-prs",
+      "path": "split-to-prs/SKILL.md",
+      "sha256": "61e3b94b54457e0f8a850cccf64936a0f5a686f6ad22016d17d30958d2f2b328"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "statusline",
+      "path": "statusline/SKILL.md",
+      "sha256": "9ce07cefc16faf737ad58fb8f09ac6d34ff457382daf90ff6a06d402f4688d73"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "update-cli-config",
+      "path": "update-cli-config/SKILL.md",
+      "sha256": "89f94fc910e97caf7d48755114ca778f0cf79905416f8198fe419d7bc2e19954"
+    },
+    {
+      "provider": "Cursor",
+      "package": "skills-cursor",
+      "version": null,
+      "name": "update-cursor-settings",
+      "path": "update-cursor-settings/SKILL.md",
+      "sha256": "8b5ee1a74dc964f5c240a18e0b7402051e0d1f688e7db3037048207213a0e78d"
     }
   ]
 }
